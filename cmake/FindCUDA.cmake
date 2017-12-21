@@ -784,7 +784,7 @@ if(NOT CUDA_VERSION VERSION_LESS "3.2")
     find_cuda_helper_libs(nvcuvid)
   endif()
 endif()
-if(CUDA_VERSION VERSION_GREATER_EQUAL "9.0")
+if(CUDA_VERSION VERSION_GREATER "8.9")
   # In CUDA >9.0 NPP was splitted onto many separate libraries.
   file(GLOB CUDA_nppi_LIBRARY ${CUDA_TOOLKIT_ROOT_DIR}/lib64/stubs/libnppi*.so)
   find_cuda_helper_libs(nppc)
